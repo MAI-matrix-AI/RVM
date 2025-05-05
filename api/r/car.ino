@@ -8,18 +8,21 @@ void setup() {
     digitalWrite(5, HIGH); //левый мотор на полную скорость
     digitalWrite(6, HIGH); //правый мотор на полную скорость
 }
-void forward(int $iter) {
-    for (int i = 0; i < $iter; i++) {
+void forward(int iter) {
+    for (int i = 0; i < iter; i++) {
         digitalWrite(8, HIGH);
         digitalWrite(12, HIGH);
     }
 }
-void backward() {
-    digitalWrite(8, LOW);
-    digitalWrite(12, LOW);
+void backward(int iter) {
+    for (int i = 0; i < iter; i++) {
+        digitalWrite(8, LOW);
+        digitalWrite(12, LOW);
+    }
 }
 void right() {
     digitalWrite(11, HIGH)
 }
 void left() {
     digitalWrite(7, HIGH)
+}
