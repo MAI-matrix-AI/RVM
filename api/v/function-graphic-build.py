@@ -15,8 +15,9 @@ y_axis = result
 plt.plot(x_axis, y_axis, color='green', linestyle='--', marker='o')
 plt.show
 
-result = depend2(for i in range(20))
+result = depend2(for i in range(20), for i in range(20))
 x_axis2 = [for i in range(20)]
-y_axis2 = result
-plt.plot(x_axis2, y_axis2, color='blue', linestyle='--', marker='o')
+y_axis2 = [for i in range(20)]
+z_axis = result
+plt.plot(x_axis2, y_axis2, z_axis, color='blue', linestyle='--', marker='o')
 plt.show
