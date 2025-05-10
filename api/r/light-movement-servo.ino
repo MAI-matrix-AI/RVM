@@ -30,10 +30,11 @@ void lightonoff() {
   }
 }
 
-void serv(int a, int b, int c)
+void serv(int a, int b, int c) {
   myServo.write(a); 
   delay(1000);
   myServo.write(b);
   delay(1000);
   myServo.write(c);
   delay(1000);
+}
